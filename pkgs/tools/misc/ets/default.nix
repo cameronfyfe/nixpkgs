@@ -8,17 +8,17 @@ buildGoModule rec {
     owner = "zmwangx";
     repo = pname;
     rev = version;
-    sha256 = "sha256-ceRyYrqmgdTnV8m9LkLlR6iTrC5F81X/V3fWI2CiKBw=";
+    sha256 = "sha256-XWIDo5msTMTLr60x1R9cwsiZIDG6G+uHWx8idt4F2iA=";
   };
 
-  vendorSha256 = "sha256-UCeMy4iT0c2sTcCDPg0TIYCLYfrIUvHluUuGIpzluSg=";
+  vendorSha256 = null;
 
   doCheck = false;
 
 #   ldflags = [ "-s" "-w" "-X main.version=${version}" "-X main.build=v${version}" ];
 
   meta = with lib; {
-    description = "Command output timestampe";
+    description = "Command output timestamp";
     homepage = "https://github.com/zmwangx/ets/";
     license = licenses.mit;
     maintainers = with maintainers; [ cameronfyfe ];
