@@ -319,6 +319,8 @@ with pkgs;
 
   eclipse-mat = callPackage ../development/tools/eclipse-mat { };
 
+  ets = callPackage ../tools/misc/ets { };
+
   evans = callPackage ../development/tools/evans { };
 
   frugal = callPackage ../development/tools/frugal { };
