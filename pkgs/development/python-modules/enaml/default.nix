@@ -12,13 +12,13 @@
 
 buildPythonPackage rec {
   pname = "enaml";
-  version = "0.13.0";
+  version = "0.14.0";
 
   src = fetchFromGitHub {
     owner = "nucleic";
     repo = pname;
     rev = version;
-    sha256 = "sha256-8ZahvFDYW7xUTSTZP1UXnQBCg9RVUywoO7EbqtTQPJI=";
+    sha256 = "175lw2asqahql8kq1xl16sydi9aw6snhk93mpbb5gfpb7y6ggr5v";
   };
 
   # qt bindings cannot be found during tests
