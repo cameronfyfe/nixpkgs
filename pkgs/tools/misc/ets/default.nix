@@ -11,11 +11,9 @@ buildGoModule rec {
     sha256 = "sha256-XWIDo5msTMTLr60x1R9cwsiZIDG6G+uHWx8idt4F2iA=";
   };
 
-  vendorSha256 = null;
+  vendorSha256 = "sha256-+8dXfqOu8XTw2uEx3GAynQSHtzifejZtddr1CdxrupA=";
 
   doCheck = false;
-
-#   ldflags = [ "-s" "-w" "-X main.version=${version}" "-X main.build=v${version}" ];
 
   meta = with lib; {
     description = "Command output timestamp";
