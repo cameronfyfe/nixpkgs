@@ -1,5 +1,5 @@
-{ lib, buildGoModule, fetchFromGitHub }:
-# with (import <nixpkgs> {});
+# { lib, buildGoModule, fetchFromGitHub }:
+with (import <nixpkgs> {});
 
 buildGoModule rec {
   pname = "ets";
@@ -12,7 +12,7 @@ buildGoModule rec {
     sha256 = "sha256-XWIDo5msTMTLr60x1R9cwsiZIDG6G+uHWx8idt4F2iA=";
   };
 
-  vendorSha256 = lib.fakeSha256;
+  vendorSha256 = "sha256-+8dXfqOu8XTw2uEx3GAynQSHtzifejZtddr1CdxrupA=";
 
   doCheck = false;
 
