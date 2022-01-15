@@ -15,7 +15,7 @@ buildGoModule rec {
 
   vendorSha256 = "sha256-+8dXfqOu8XTw2uEx3GAynQSHtzifejZtddr1CdxrupA=";
 
-  ldflags = [ "-s" "-w" "-X main.version=${version}" ];
+  ldflags = [ "-s" "-w" "-X main.version=v${version}-nixpkgs-${system}" ];
 
   preBuild = ''
     rm -rf fixtures
