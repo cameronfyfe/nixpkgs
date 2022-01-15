@@ -1,5 +1,4 @@
 { lib, buildGoModule, fetchFromGitHub }:
-# with (import <nixpkgs> {});
 
 buildGoModule rec {
   pname = "ets";
@@ -8,11 +7,17 @@ buildGoModule rec {
   src = fetchFromGitHub {
     owner = "zmwangx";
     repo = pname;
-    rev = version;
+    rev = "v${version}";
     sha256 = "sha256-XWIDo5msTMTLr60x1R9cwsiZIDG6G+uHWx8idt4F2iA=";
   };
 
+  patches = [ ./go-mod.patch ];
+
   vendorSha256 = "sha256-+8dXfqOu8XTw2uEx3GAynQSHtzifejZtddr1CdxrupA=";
+
+  preBuild = ''
+    rm -rf fixtures
+  '';
 
   doCheck = false;
 
