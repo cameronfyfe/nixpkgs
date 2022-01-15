@@ -21,6 +21,10 @@ buildGoModule rec {
     rm -rf fixtures
   '';
 
+  postInstall = ''
+    cp ets.1 $out
+  '';
+
   doCheck = false;
 
   meta = with lib; {
