@@ -1,5 +1,5 @@
-# { lib, buildGoModule, fetchFromGitHub }:
-with (import <nixpkgs> {});
+{ lib, buildGoModule, fetchFromGitHub }:
+# with (import <nixpkgs> {});
 
 buildGoModule rec {
   pname = "ets";
