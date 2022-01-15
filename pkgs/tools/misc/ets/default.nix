@@ -22,7 +22,8 @@ buildGoModule rec {
   '';
 
   postInstall = ''
-    cp ets.1 $out
+    mkdir -p $out/share/man/man1
+    cp ets.1 $out/share/man/man1
   '';
 
   doCheck = false;
