@@ -981,6 +981,8 @@ with pkgs;
 
   acoustidFingerprinter = callPackage ../tools/audio/acoustid-fingerprinter { };
 
+  activitywatch = callPackage ../tools/misc/activitywatch { };
+
   alsaequal = callPackage ../tools/audio/alsaequal { };
 
   acpica-tools = callPackage ../tools/system/acpica-tools { };
