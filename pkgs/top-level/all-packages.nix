@@ -13057,6 +13057,8 @@ with pkgs;
 
   scrot = callPackage ../tools/graphics/scrot { };
 
+  scrutiny = callPackage ../applications/misc/scrutiny { };
+
   scrypt = callPackage ../tools/security/scrypt { };
 
   sd = callPackage ../tools/text/sd {
