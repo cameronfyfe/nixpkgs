@@ -17,7 +17,7 @@ buildGoModule rec {
 
   vendorSha256 = "sha256-eB2Zmd537psC0QU2SkWlamLC5qw0HwFo4IxWgQXfxmQ=";
 
-  postBuild = ''
+  preInstall = ''
     getMakeVar() {
       grep -m 1 $1 Makefile | sed 's/^.*= //g'
     }
