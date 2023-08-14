@@ -23688,6 +23688,8 @@ with pkgs;
     asciidoc = asciidoc-full;
   };
 
+  lurk-lang = callPackage ../development/compilers/lurk { };
+
   lyra = callPackage ../development/libraries/lyra { };
 
   lzlib = callPackage ../development/libraries/lzlib { };
